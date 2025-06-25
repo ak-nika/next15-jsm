@@ -20,7 +20,9 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
 
   if (!post) return notFound();
 
-  const parsedContent = md.render(post?.content || "");
+  console.log(post);
+
+  const parsedContent = md.render(post?.pitch || "");
 
   return (
     <>
