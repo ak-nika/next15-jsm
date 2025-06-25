@@ -44,8 +44,6 @@ export const createPitch = async (
       error: "",
     });
   } catch (error) {
-    console.log(error);
-
     return parseServerActionResponse({
       error: JSON.stringify(error),
       status: "error",
